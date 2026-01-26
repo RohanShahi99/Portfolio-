@@ -236,7 +236,15 @@ function checkWidth() {
         // Note: xmark usually stays hidden until the menu is opened
     }
 }
+function openmenu() {
+    sidemenu.classList.add("active");
+    sidemenu.style.right = "0";
+}
 
+function closemenu() {
+    sidemenu.classList.remove("active");
+    sidemenu.style.right = "-250px";
+}
 // Run on load and whenever window is resized
 window.addEventListener('resize', checkWidth);
 window.addEventListener('load', checkWidth);
@@ -262,6 +270,7 @@ window.addEventListener('load', checkWidth);
 </script>
     </body>
 </html>
+
 
 
 
