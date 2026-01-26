@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+   <script src="https://kit.fontawesome.com/055ae34759.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+     <div class="container">
+        <nav>
+            <img src="Images/logo.PNG" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>IT Project Manager/<br>Front-End Developer</p>
+            <h1>Hi, I'm <span>Rohan</span><br>Shahi From USA</h1>
+        </div>
+     </div>
+</div>
+
+<!--------about------------->
+<div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/Rohan(1).png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi, I’m Rohan Shahi, a BSIT student at Westcliff University with a strong interest in IT project management, cloud computing, and full-stack web development. I enjoy building practical, technology-driven solutions that improve efficiency and user experience.
+                I have hands-on experience working on projects such as NextGen Inventory and an AI-Enhanced Recipe & Meal Planner, where I applied skills in Node.js, Express, MongoDB, cloud concepts, and system design. My academic focus and projects reflect my passion for combining technology with real-world business needs.
+                Having grown up in a multicultural environment, I value collaboration, adaptability, and clear communication. I’m continuously learning and aiming to grow into roles that bridge technology, leadership, and problem-solving.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                    <p class="tab-links"onclick="opentab('cerftificates')">Certificates</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                    <li><span>Web Development</span><br>Web app Development</li>
+                    <li><span>Project Management</span><br>Managing IT Projects</li>        
+                </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>Oct 2022-Present</span><br>Shy Production Pvt. Ltd, Nepal<br>Project Management Assistant (Part-Time) </li>
+                    <li><span>Jan 2024 - Aug 2024</span><br>Innov Teach Pvt Ltd, Nepal<br>IT Project Management Intern </li>
+                    <li><span>Apr 2023 - Sep 2023</span><br>Sale & Operations Intern, Nepal<br>Autocomp Logistics Pvt Ltd  </li>        
+                </ul>
+        </div>
+         <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>May 2026</span><br>Westcliff University USA</li>
+                    <li><span>March 2022</span><br>American GED Center Nepal</li>    
+                </ul>
+        </div>
+          <div class="tab-contents" id="cerftificates">
+                <ul>
+                    <li><span>Google Agile Essentials Specialization (Google)</span><br>Coursera</li>
+                </ul>
+          </div>
+</div>
+<!---------services----------->
+<div id="services">
+    <div class="container">
+          <h1 class="sub-title">My Services</h1>
+          <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Website Development</h2>
+                <p>I create custom websites with responsive and mobile-friendly designs. I specialize in front-end development using HTML, CSS and JavaScript, 
+                    ensuring fast performance and smooth user experience. I also provide basic SEO optimization,
+                     ongoing updates, redesigns, and website maintenance. I collaborate closely with clients from concept 
+                     to launch to deliver a website that meets their vision and goals.</P>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>I specialize in UI/UX-focused website design, creating intuitive and visually engaging user experiences. I design responsive, mobile-friendly
+                     layouts and ensure seamless front-end functionality using HTML, CSS and JavaScript. My services include performance optimization, basic SEO, website updates, 
+                     redesigns and maintenance. I collaborate closely with clients from concept to launch to deliver websites that are both user-friendly and visually compelling.</P>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-list-check"></i>
+                <h2>IT Project Management</h2>
+                <p>I provide IT project management services focused on planning, coordinating and delivering technology projects on time and within scope,
+                     while ensuring clear communication, risk management and collaboration between stakeholders from project initiation to completion.</P>
+                <a href="#">Learn More</a>
+            </div>
+            </div>
+          </div>
+    </div>
+</div>
+</div>
+</div>
+<!---------portfolio----------->
+<div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/Web.jpg"> 
+                <div class="layer">
+                    <h3>Website Development</h3>
+                    <p>Designing and developing robust front-end structures using modern HTML and CSS. I focus on creating intuitive interfaces that
+                    connect users with digital content efficiently.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+             <div class="work">
+               <img src="Images/UIUX (2).jpg">
+               <div class="layer">
+                <h3>UI/UX Design</h3>
+                <p>Creating user-centric designs that enhance usability and engagement. I specialize in crafting seamless experiences that resonate with users 
+                across devices.</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            </div>
+             <div class="work">
+                <img src="Images/Management.jpg">  
+                <div class="layer">
+                    <h3>IT Project Management</h3>
+                    <p>Overseeing technology projects from inception to completion. I ensure timely delivery, clear communication, and effective collaboration 
+                        among stakeholders.</p> 
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
+                </div>       
+             </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!---------contact----------->
+<div id="Contact">
+    <div class="container">
+        <div class="row">
+                <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>RohanDybala99@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+1 (714) 225 9598</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/rohan.shahi.77"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="http://www.linkedin.com/in/rohan-shahii"><i class="fa-brands fa-square-linkedin"></i></a>
+                    <a href="https://github.com/RohanShahi99"><i class="fa-brands fa-square-github"></i></a>
+            </div>
+            <a href="Images/My CV.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+            <form name="YOUR_FORM_NAME">
+                <input type="Name" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    </div>
+ 
+
+<footer class="copyright">
+    <div class="footer-inner">
+        <p>
+            © <span id="year"></span> Rohan Shahi · 
+            Made with <i class="fa-solid fa-heart"></i>
+        </p>
+    </div>
+</footer>
+     
+<script>
+
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab"); 
+    }
+function togglePiP(element) {
+    const video = element.querySelector('video');
+    
+    // Check if PiP is already active
+    if (document.pictureInPictureElement) {
+        document.exitPictureInPicture();
+    } else {
+        // Request PiP for the specific video clicked
+        video.requestPictureInPicture()
+            .catch(error => {
+                console.error("PiP failed:", error);
+            });
+    }
+}
+ 
+</script>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-250px";
+    }
+    var sidemenu = document.getElementById("sidemenu");
+
+function checkWidth() {
+    const barsIcon = document.querySelector('.fa-bars');
+    const xmarkIcon = document.querySelector('.fa-xmark');
+    
+    if (window.innerWidth > 600) {
+        barsIcon.style.display = 'none';
+        xmarkIcon.style.display = 'none';
+    } else {
+        barsIcon.style.display = 'block';
+        // Note: xmark usually stays hidden until the menu is opened
+    }
+}
+
+// Run on load and whenever window is resized
+window.addEventListener('resize', checkWidth);
+window.addEventListener('load', checkWidth);
+</script>
+	<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby7_HWlkL9oVh7byANx1nFDQfKLETEuqp02TzalfEqngZ5DGElbUcQcPoh5TB_yv2WmwQ/exec'
+    const form = document.forms['YOUR_FORM_NAME']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                // Show success message in the UI
+                msg.innerHTML = "Message sent successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset() // Clears the form
+            })
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
+    </body>
+</html>
