@@ -216,25 +216,45 @@ function togglePiP(element) {
 </script>
 <script>
     var sidemenu=document.getElementById("sidemenu");
+
     function openmenu(){
+
         sidemenu.style.right="0";
+
     }
+
     function closemenu(){
+
         sidemenu.style.right="-250px";
+
     }
+
     var sidemenu = document.getElementById("sidemenu");
 
+
+
 function checkWidth() {
+
     const barsIcon = document.querySelector('.fa-bars');
+
     const xmarkIcon = document.querySelector('.fa-xmark');
-    
+
+   
+
     if (window.innerWidth > 600) {
+
         barsIcon.style.display = 'none';
+
         xmarkIcon.style.display = 'none';
+
     } else {
+
         barsIcon.style.display = 'block';
+
         // Note: xmark usually stays hidden until the menu is opened
+
     }
+
 }
 function openmenu() {
     sidemenu.classList.add("active");
@@ -245,9 +265,6 @@ function closemenu() {
     sidemenu.classList.remove("active");
     sidemenu.style.right = "-250px";
 }
-// Run on load and whenever window is resized
-window.addEventListener('resize', checkWidth);
-window.addEventListener('load', checkWidth);
 </script>
 	<script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycby7_HWlkL9oVh7byANx1nFDQfKLETEuqp02TzalfEqngZ5DGElbUcQcPoh5TB_yv2WmwQ/exec'
@@ -270,6 +287,7 @@ window.addEventListener('load', checkWidth);
 </script>
     </body>
 </html>
+
 
 
 
